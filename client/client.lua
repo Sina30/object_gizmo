@@ -35,7 +35,7 @@ local function useGizmo(handle)
 
     while usingGizmo do
         local coords = GetEntityCoords(handle)
-        DrawText3D(coords.x, coords.y + 1.0, coords.z - 0.5, "Current Mode: Translate\n[W] - Translate Mode\n[R] - Rotate Mode\n[LALT] - Place On Ground\n[Esc] - Done Editing - Stop Editing\n[Backspace] ")
+        DrawText3D(coords.x, coords.y + 1.0, coords.z - 0.5, "Current Mode: Translate\n[W] - Übersetzungsmodus\n[R] - Rotationsmodus\n[LALT] - Auf den Boden legen\n[Esc] - Bearbeitung beenden - Bearbeitung stoppen\n[Backspace] ")
         SendNUIMessage({
             action = 'setCameraPosition',
             data = {
